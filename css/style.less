@@ -1,0 +1,193 @@
+*{box-sizing: border-box;}
+body{
+	font-family: "Roboto", sans-serif;
+	background-color: #621402;
+	color: #fff;
+}
+main{
+	background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+	url(../img/bg.png) no-repeat center top / cover;
+	height: 100vh;
+}
+.container{
+ max-width: 1170px;
+ margin: auto;
+}
+.header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	align-items: center;
+	display: flex;
+}
+.menu{
+	display: flex;
+	list-style-type: none;
+	margin-left: 17px;
+	&-item{
+	margin-right: 25px;}
+	&-link{
+	color: #fff;
+	text-decoration: none;}
+}
+.user{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	&-avatar{
+	height: 33px;
+	width: 33px;
+	border-radius: 50%;}
+	&-text{
+	color: #fff;
+	margin-right: 11px;}
+}
+.film{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	&-subtitle{
+	font-size: 24px;
+ line-height: 150%;
+ opacity: 0.5;}
+ &-title{
+ font-size: 36px;
+	line-height: 42px;
+ margin-top: 11px;
+ margin-bottom: 23px;}
+ &-description{
+ font-size: 16px;
+ line-height: 150%;
+ max-width: 560px;}
+ &-trailer{
+ margin: auto;}
+}
+.time{
+	display: flex;
+	align-items: center;
+	&-icon{
+	margin-right: 14px;}
+}
+.rating{
+	display: flex;
+	align-items: center;
+	&-icon{
+	margin-right: 12px;
+	margin-left: 34px;}
+	&-current{
+	font-size: 24px;
+	line-height: 150%;}
+}
+.film-details{
+	display: flex;
+	margin-top: 56px;
+}
+.session{
+	margin-top: 62px;
+	padding-top: 48px;
+	padding-bottom: 63px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	&-date-block{
+	display: flex;}
+	&-date-item{
+	display: flex;
+	flex-direction: column;
+ border: 1px solid #fff;
+ border-radius: 5px;
+ text-align: center;
+ margin-right: 15px;
+ align-items: center;
+ justify-content: center;
+ height: 90px; width: 90px;
+ transition: background-color 0.2s;}
+ &-label{
+ display: block;
+ margin-bottom: 20px;}
+ &-month{
+ font-size: 16px;
+ line-height: 19px;}
+ &-day{
+ font-size: 30px;
+ line-height: 35px;
+ font-weight: 900;}
+ &-week{
+ font-size: 19px;
+ line-height: 22px;}
+ &-date-item:hover{
+ background-color: #FE8E05;
+ color: #621402;
+ cursor: pointer;}
+}
+select{
+	font-size: 16px;
+	line-height: 150%;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	color: #fff;
+	background-color: #621402;
+	padding: 18px;
+	margin-top: 14px;
+}
+.select-cinema{
+	min-width: 470px;
+}
+.scheme{
+	background: rgba(36, 36, 36, 0.18);
+	border-radius: 10px;
+	margin-bottom: 40px;
+	path:not(.light){
+ fill: rgba(255, 255, 255, 0.2);
+ cursor: pointer;
+ &:hover{
+ fill: rgba(255, 255, 255, 0.5);}}
+ path.light{
+	fill: linear-gradient(180deg, rgba(196, 196, 196, 0.21) 0%, rgba(196, 196, 196, 0) 100%);}
+ path.booked{
+ fill: rgba(255, 255, 255, 0.05);
+ &:hover{
+ cursor: not-allowed;
+ fill: rgba(255, 255, 255, 0.05);}}
+ path.active,path.active:hover{
+ 	fill: #FE8E05;}
+}
+.legend{
+	display: flex;
+	padding-top: 22px;
+	padding-bottom: 38px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	max-width: 1024px;
+	margin: auto;
+	&-label{
+	display: flex;
+ align-items: center;}
+ &-active{
+ margin-right: 30px;
+ margin-left: 30px;}
+}
+.price{
+	margin-top: 62px;
+	padding-bottom: 158px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&-label{
+		display: block;
+	font-size: 18px;
+	line-height: 21px;}
+	&-tag{
+	font-size: 52px;
+ line-height: 61px;}
+}
+.button-pay{
+	background-color: #FE8E05;
+	padding: 24px 52px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	line-height: 21px;
+	border-radius: 5px;
+}
